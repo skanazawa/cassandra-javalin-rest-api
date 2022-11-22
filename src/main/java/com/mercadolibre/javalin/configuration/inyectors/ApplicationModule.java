@@ -17,6 +17,7 @@ public class ApplicationModule extends AbstractModule {
         install(new JavalinModule());
         install(new EmployeeModule());
         install(new FullTextSearchModule());
+        install(new MessagesModule());
 
         bind(ApplicationStarter.class).in(Singleton.class);
     }
